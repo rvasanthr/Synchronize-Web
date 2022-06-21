@@ -1,0 +1,368 @@
+@media only screen and (max-width: 1400px){
+    /* ************************************** APP WINDOW */
+    .app-window{
+        width: 1200px;
+        height: 80%;
+    }
+}
+
+@media only screen and (max-width: 1200px){
+    /* **************************************HERO SECTION */
+    .hero-section{
+        height: 800px;
+    }
+
+    /* *************************************** APP SECTION */
+    .app-window{
+        width: 1150px;
+        height: 75%;
+    }
+
+    /* ************************************** STATUS BAR SECTION */
+    .stats-section{
+        padding: 50px 100px;
+    }
+
+    /* *************************************** WHY SECTION */
+    .key-points{
+        height: 65%;        
+    }
+
+    .why-section-left p{
+        font-size: 16px;
+    }
+
+    .why-section-right img{
+        height: 95%;
+    }
+
+    /* **************************************** ABOUT SECTION */
+    .about-section{
+        height: 600px;
+    }
+
+    .about-section-content img{
+        height: 40vh;
+    }
+
+    .about-section-content p{
+        font-size: 20px;
+    }
+
+    /* **************************************** PLAN SECTION */
+    .card-section{
+        width: 70%;
+    }
+
+    /* **************************************** HELP-SECTION */
+    .support-article{
+        width: 1023px;
+    }
+}
+
+@media only screen and (max-width: 1023px){
+    /* **************************************** HERO SECTION */
+    .hero-section{
+        height: 750px;
+    }
+
+    .nav-links li a{
+        font-size: 16px;
+    }
+
+    .open-btn{
+        transform: scale(0.7);
+    }
+
+    .hero-description{
+        top: 40%;
+    }
+
+    /* ****************************************** APP SECTION */
+    .app-section{
+        display: none;
+    }
+
+    /* ****************************************** WHY SECTION */
+    .why-section-left{
+        flex: 0 0 100%;
+    }
+
+    .l-angle{
+        display: none;
+    }
+
+    .key-points{
+        margin-left: 0;
+        margin-top: 5%;
+        height: 70%;
+    }
+
+    .why-section-right{
+        display: none;
+    }
+
+    /* **************************************** PLAN SECTION */
+    .card-section{
+        width: 80%;
+    }
+
+    /* ****************************************** HELP SECTION */
+    .support-article{
+        width: 800px;
+        height: 600px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    /* **************************************** HERO SECTION NAVBAR */
+    .open-btn{
+        display: none;
+    }
+
+    .navbar{
+        background-color: #000;
+        backdrop-filter: none;
+        justify-content: space-between;
+        padding: 0 5%;
+        height: 50px;
+    }
+
+    .nav-logo{
+        height: 30px;
+    }
+
+    .nav-links{
+        z-index: 10;
+        flex-direction: column;        
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 50px;
+        bottom: 100%;
+        width: auto;
+        height: auto;            
+        overflow: hidden;
+        background-color: rgba(0, 0, 0, .5);
+        backdrop-filter: blur(40px);
+        -webkit-backdrop-filter: blur(40px);        
+        transition: all 0.3s ease-in-out;
+    }
+
+    .nav-links li a{
+        font-size: 24px;
+    }
+
+    :checked ~ .nav-links{
+        bottom: 0;
+    }
+
+    .icon-burger .bar{
+        width: 30px;
+        height: 2px;
+        background-color: #fff;
+        margin: 5px;
+        border-radius: 10px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    /* NAVBAR X MARK */
+    :checked ~ .icon-burger .bar:nth-child(1){
+        transform: translateY(7px) rotate(45deg);
+    }
+
+    :checked ~ .icon-burger .bar:nth-child(3){
+        transform: translateY(-7px) rotate(-45deg);
+    }
+
+    :checked ~ .icon-burger .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    /*************************************** HERO SECTION */
+    .hero-content{
+        top: 10%;
+    }
+
+    .hero-images{
+        flex-direction: column;
+        align-items: space-around;
+        margin-top: 7%;
+        margin-left: 43%;        
+        /* margin-top: 25%;
+        margin-left: 40%;         */
+    }
+
+    .hero-images img{
+        width: 16vw;
+    }
+
+    .hero-description{
+        top: 55%;
+    }
+
+    .download-btn{
+        transform: scale(0.8);
+    }
+
+    /* **************************************** STATUS BAR SECTION*/
+    .stats-section{
+        height: 100px;
+        padding: 50px;
+    }
+
+    /* ****************************************** ABOUT SECTION */
+    .about-section-content{
+        flex-direction: column;
+    }
+
+    .about-section-content img{
+        margin: 15px 50px;
+    }
+
+    /* **************************************** PLAN SECTION */
+    .plan-title{
+        padding: 10px;
+    }
+
+    .plan-title h2{
+        font-size: 5vw;
+    }
+
+    .plan-title p{
+        font-size: 1rem;
+    }
+
+    .card-section{
+        flex-direction: column;
+        overflow: scroll;
+        border: 2px solid #fcf0ff;
+        padding: 5px;
+        width: fit-content;
+        margin-top: 20px;
+    }
+
+    .card{
+        height: 350px;
+        width: 250px;
+        margin: 10px;
+        box-shadow: none;
+    }
+
+    .card .card-plan{
+        margin-top: 5%;
+        line-height: 1.5;
+    }
+
+    .card .card-plan button{
+        height: 30px;
+        margin-top: 5%;
+    }
+
+    .card p{
+        font-size: 16px;
+    }
+
+    /* ****************************************** HELP SECTION */
+    .support-article img{
+        display: none;
+    }
+
+    .support-article{
+        margin-top: 10%;
+        width: 400px;
+        height: 650px;
+    }
+
+    /* ******************************************** FOOTER SECTION*/
+    .footer-top{
+        justify-content: center;
+    }
+
+    .footer-top img{
+        height: 40px;
+    }
+
+    .footer-bottom{
+        flex-direction: column;
+        justify-content: space-evenly;
+        font-size: 10px;
+    }
+
+    .footer-links li{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    /* ******************** HERO SECTION ******************** */
+    .hero-section{
+        height: 100vh;
+    }
+
+    .hero-images{
+        margin-top: 11%;
+        margin-left: 37%;
+    }
+
+    .hero-images img{
+        width: 30vw;
+    }
+
+    .hero-description{
+        top: 65%;
+    }
+
+    .hero-description p{
+        font-size: 3vw;
+    }
+
+    .download-btn{
+        margin-top: 10%;
+        transform: scale(0.7);
+    }
+
+    /* **************************************** STATUS BAR SECTION*/
+    .stats-section{
+        padding: 40px 0;
+    }
+
+    .stats h3{
+        font-size: 18px;
+    }
+
+    .stats p{
+        font-size: 12px;
+    }
+
+    /* ****************************************** WHY SECTION */
+    .why-section-left h2{
+        font-size: 8vw;
+    }
+
+    /* ****************************************** ABOUT SECTION */
+    .about-section-content img{
+        margin: 15px 50px;
+    }
+
+    .about-section-text{
+        font-size: 18px;
+        line-height: 1.3;
+    }
+
+    /* ****************************************** SUPPORT SECTION */
+    .support-section{
+        height:max-content;
+    }
+
+    .support-section-h2{
+        font-size: 40px;
+    }
+
+    .support-article{
+        margin: 5% 0;    
+        width: 80vw;        
+        height: 50vh;
+    }
+
+}
