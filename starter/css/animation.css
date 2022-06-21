@@ -1,0 +1,112 @@
+/* IMAGE 1 */
+.hero-images img:first-of-type{
+    animation-name: bounce-man;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transform-origin: top;
+}
+
+@keyframes bounce-man{
+    0%{
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(-10px);
+        -webkit-transform: translateY(-10px);
+    }
+
+    100%{
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+    }
+}
+
+/* IMAGE 2 */
+.bounce-2{
+    animation-name: bounce-2;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
+}
+
+@keyframes bounce-2{
+    0%{
+        transform: translateY(-10px);
+        -webkit-transform: translateY(-10px);
+    }
+
+    50%{
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+    }
+
+    100%{
+        transform: translateY(-10px);
+        -webkit-transform: translateY(-10px);
+    }
+}
+
+/* SIGNAL */
+.blink{
+    animation-name: blink;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blink {
+    0%{
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 100%;
+    }
+
+    100%{
+        opacity: 0;
+    }
+}
+
+/* HERO TEXT */
+.hero-content h1:first-of-type{
+    animation-name: swipe-from-right;
+    animation-duration: 3s;
+}
+
+@keyframes swipe-from-right{
+    0%{
+        margin-right: -2000px;
+    }
+
+    50%{
+        margin-right: 50px;
+    }
+
+    100%{
+        margin-right: 0px;
+    }
+}
+
+.hero-content h1:last-of-type{
+    animation-name: swipe-from-left;
+    animation-duration: 3s;
+}
+
+@keyframes swipe-from-left{
+    0%{
+        margin-left: -2000px;
+    }
+
+    50%{
+        margin-left: 50px;
+    }
+
+    100%{
+        margin-left: 0px;
+    }
+}
